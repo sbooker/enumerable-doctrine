@@ -101,3 +101,9 @@ See [LICENSE][license] file.
 [php]: https://php.net
 [downloads]: https://packagist.org/packages/sbooker/enumerable-doctrine
 
+[litgroup-enumerable]: https://github.com/LitGroup/enumerable.php
+[doctrine-field-type]: https://www.doctrine-project.org/projects/doctrine-dbal/en/2.10/reference/types.html
+[packagist]: https://packagist.org/packages/ramsey/uuid-doctrine
+[composer]: http://getcomposer.org/
+[doctrine-getting-started]: https://www.doctrine-project.org/projects/doctrine-orm/en/current/tutorials/getting-started.html
+
