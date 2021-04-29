@@ -8,8 +8,8 @@ use Doctrine\DBAL\Platforms\AbstractPlatform;
 
 abstract class IntegerEnumerableType extends AbstractEnumerableType
 {
-    public function getSQLDeclaration(array $fieldDeclaration, AbstractPlatform $platform): string
+    public function getSQLDeclaration(array $column, AbstractPlatform $platform): string
     {
-        return $platform->getIntegerTypeDeclarationSQL(array_merge(['unsigned' => true], $fieldDeclaration));
+        return $platform->getIntegerTypeDeclarationSQL(array_merge(['unsigned' => true], $column));
     }
 }

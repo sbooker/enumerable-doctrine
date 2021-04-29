@@ -8,8 +8,8 @@ use Doctrine\DBAL\Platforms\AbstractPlatform;
 
 abstract class StringEnumerableType extends AbstractEnumerableType
 {
-    public function getSQLDeclaration(array $fieldDeclaration, AbstractPlatform $platform): string
+    public function getSQLDeclaration(array $column, AbstractPlatform $platform): string
     {
-        return $platform->getVarcharTypeDeclarationSQL(array_merge(['length' => 63], $fieldDeclaration));
+        return $platform->getVarcharTypeDeclarationSQL(array_merge(['length' => 63], $column));
     }
 }
